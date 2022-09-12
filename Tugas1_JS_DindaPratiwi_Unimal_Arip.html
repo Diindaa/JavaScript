@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas1_JS_DindaPratiwi</title>
+</head>
+<body bgcolor="LavenderBlush">
+    <table border="1" align="justify" bgcolor="MistyRose" cellpadding="10" cellspacing="0"
+    width="20%">
+    
+            <script language="javascript">
+            let pegawai = "Ridwan";
+            let jabatan = "Manager";
+            let status = "Menikah";
+            document.write("<h3 align='center'>Data Gaji Pegawai");
+            document.write("<hr>");
+            </script>
+        
+<tr>
+    <td>
+        <script>
+   document.write("Nama");
+            </script>
+    </td>
+    <td>
+        <script>
+             document.write(pegawai);
+            </script>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <script>
+             document.write("Jabatan");
+            </script>
+    </td>
+    <td>
+        <script>
+             document.write(jabatan);
+            </script>
+    </td> 
+</tr>
+
+<tr>
+    <td>
+        <script>
+             document.write("Status");
+            </script>
+    </td>
+    <td>
+        <script>
+             document.write(status);
+            </script>
+    </td>
+</tr>
+    </table>
+
+<!----------------------------------------Awal Tabel Gaji------------------------------------------------>
+    <table border="1" align="center" bgcolor="MistyRose" cellpadding="10" cellspacing="0"
+    width="30%">
+    <thead>
+        <tr bgcolor="LightPink">
+            <th>Data Gaji</th>
+            <th>Jumlah</th>
+        </tr>
+    </thead>
+
+            <script language="javascript">
+            let gapok ="Gaji Pokok"
+
+            if(jabatan=='Manager'){
+                gapok= 15000000;
+            }
+            else if(jabatan=='Asisten Manager'){
+                gapok= 10000000;
+            }
+            else{
+                gapok=0;
+            }
+        
+            let jmtunjangan=0.15*gapok;
+            let bpjs=0.1*gapok;
+            let jmtunjangank=(status == 'Menikah') ? 0.2*gapok :0;
+            let tot= gapok+jmtunjangank+jmtunjangank-bpjs;
+            </script>
+        
+<tbody>
+<tr>
+    <td>
+        <script>
+             document.write("Gaji Pokok");
+            </script>
+    </td>
+    <td>
+        <script>
+             document.write(gapok);
+            </script>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <script>
+             document.write("Tunjangan");
+            </script>
+    </td>
+    <td>
+        <script>
+             document.write(jmtunjangan);
+            </script>
+    </td> 
+</tr>
+
+<tr>
+    <td>
+        <script>
+             document.write("BPJS");
+            </script>
+    </td>
+    <td>
+        <script>
+             document.write(bpjs);
+            </script>
+    </td>
+</tr>
+
+<tr>
+<td>
+    <script>
+         document.write("Tunjangan Keluarga");
+        </script>
+</td>
+<td>
+    <script>
+         document.write(jmtunjangank);
+        </script>
+</td>
+</tr>
+</tbody>
+
+    <tfoot>
+        <tr bgcolor="LightPink">
+            <td>
+                <script>
+                     document.write("Total Gaji");
+                    </script>
+            </td>
+            <td>
+                <script>
+                     document.write(tot);
+                    </script>
+            </td>
+            </tr>
+    </tfoot>
+    </table>
+<!----------------------------------------Akhir Tabel Gaji------------------------------------------------>
+</body>
+</html>
