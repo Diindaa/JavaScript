@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas2_JS_DindaPratiwi</title>
+</head>
+<body bgcolor="LavenderBlush">
+
+    <table border="1" align="center" cellpadding="10" cellspacing="0"
+    width="95%">
+       <thead>
+        <tr bgcolor="DarkOrchid">
+            <th>NO</th>
+            <th>Pegawai</th>
+            <th>Jabatan</th>
+            <th>Agama</th>
+            <th>Gaji Pokok</th>
+            <th>Tunjangan Jabatan</th>
+            <th>Tunjangan Kesehatan</th>
+            <th>Gaji Kotor</th>
+            <th>Zakat Profesi</th>
+            <th>Take Home Pay</th>
+        </tr>
+       </thead> 
+<tbody>
+    <script language="javascript">
+        var no, warna, jabatan, agama, gapok, zapro;
+            for(no=1; no<=100; no++){
+                if(no<=25){
+                jabatan='Manager';
+            }
+            else if(no<=50){
+                jabatan='Asisten Manager';
+            }
+            else if(no<=75){
+                jabatan='Supervisor';
+            }
+            else {
+                jabatan='Staff';
+            }
+
+            switch(jabatan){
+                    case 'Manager': gapok= 15000000; break;
+                    case 'Asisten Manager': gapok= 10000000; break;
+                    case 'Supervisor': gapok= 7000000; break;
+                    case 'Staff': gapok= 4000000; break;
+                    default: gapok = 0;
+                } 
+                let tunjab = 0.2*gapok;
+                let tunkes = 0.1*gapok;
+                let gator = gapok+tunjab+tunkes;
+
+                warna = (no %2 ==0)? 'Thistle' : 'Plum';
+                agama = (no %2 ==1)? 'Muslim'  : 'Non-Muslim';
+                zapro = (agama == 'Muslim' && gator>='7000000')? 0.25*gator : 0;
+
+                let THP = gator-zapro;
+
+                document.write(`<tr bgcolor="${warna}">
+                    <td>${no}</td>
+                        <td>Pegawai${no}</td> 
+                        <td>${jabatan}</td>
+                        <td>${agama}</td>
+                        <td>Rp. ${gapok}</td>
+                        <td>Rp. ${tunjab}</td>
+                        <td>Rp. ${tunkes}</td>
+                        <td>Rp. ${gator}</td>
+                        <td>Rp. ${zapro}</td>
+                        <td>Rp. ${THP}</td>
+                    </tr>`)
+            }
+    
+</script>
+</tbody>
+
+</body>
+</html>
