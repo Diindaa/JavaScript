@@ -1,0 +1,60 @@
+
+    <script language="javascript">
+        //array of object
+        let m1 = {nama:"Afni", nilai:70};
+        let m2 = {nama:"Aqil", nilai:20};
+        let m3 = {nama:"Dinda", nilai:99};
+        let m4 = {nama:"Mutia", nilai:75};
+        let m5 = {nama:"Sarah", nilai:50};
+        let m6 = {nama:"Ririn", nilai:65};
+        
+        let mahasiswa = [m1, m2, m3, m4, m5, m6];
+
+        </script>
+        <h2 align="center">DAFTAR NILAI MAHASISWA</h2>
+                <table align="center" border="1" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr bgcolor="ForestGreen">
+                            <th>NO</th>
+                            <th>NAMA</th>
+                            <th>NILAI</th>
+                            <th>KETERANGAN</th>
+                            <th>GRADE</th>
+                            <th>PREDIKAT</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <script language="javascript">
+                        let no = 1, warna, grade, nilai, predikat;    
+                        for(m of mahasiswa) { 
+                            //set kelulusan
+                            let ket = ( m.nilai >= 65) ? "Lulus" : "Gagal";
+                            
+                            if(m.nilai >=85) grade ='A';                     
+                            else if(m.nilai >=75 && m.nilai <=85) grade ='B';
+                            else if(m.nilai >=65 && m.nilai <=75) grade ='C';
+                            else if(m.nilai >=55 && m.nilai <=65) grade ='D';
+                            else grade = 'E';
+    
+                            switch(grade){
+                                case 'Manager': gapok= 15000000; break;
+                                case 'A' : predikat = 'Sangat Memuaskan'; break;
+                                case 'B' : predikat = 'Baik'; break;
+                                case 'C' : predikat = 'Cukup'; break;
+                                case 'D' : predikat = 'Kurang'; break;
+                                default : predikat = 'Buruk';
+                            }
+    
+                            warna = (no %2 ==0)? 'MediumSeaGreen' : 'DarkSeaGreen';
+                            document.write(`<tr bgcolor="${warna}">
+                                <td>${no++}</td>
+                                <td>${m.nama}</td>
+                                <td>${m.nilai}</td>
+                                <td>${ket}</td>
+                                <td>${grade}</td>
+                                <td>${predikat}</td>
+                            </tr>`);
+                        }
+                        </script>
+                    </tbody>
