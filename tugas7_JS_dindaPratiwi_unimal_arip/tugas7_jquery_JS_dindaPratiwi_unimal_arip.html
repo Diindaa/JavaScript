@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas7_DindaPratiwi_JS_Jquery</title>
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+      .card-header{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        background-color:#e1f3fa;
+      }
+      .card-body{
+        background-color: WhiteSmoke;
+      }
+      .card-footer{
+        background-color: #e1f3fa;
+      }
+      .accordion-body{
+        background-color: AliceBlue;
+      }
+    </style>
+</head>
+<body>
+<br/>
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+    <div class="card">
+        <div class="card-header" align="center">
+          KLIK JENIS DAN NAMA HEWAN DIBAWAH INI
+        </div>
+
+        <div class="card-body">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Hewan Unggas
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                            <div class="row row-cols-1 row-cols-md-4 g-4">
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="ayam" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Ayam</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause1">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="angsa" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Angsa</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause2">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="bebek" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Bebek</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause3">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="burung" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Burung</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause4">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                        </div>
+                      </div>
+                      </div>
+
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Hewan Ternak
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body">
+                            <div class="row row-cols-1 row-cols-md-4 g-4">
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="kambing" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Kambing</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause5">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="kucing" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Kucing</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause6">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="kuda" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Kuda</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause7">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="sapi" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Sapi</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause8">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                        </div>
+                      </div>
+                      </div>
+
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Hewan Buas
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <div class="row row-cols-1 row-cols-md-4 g-4">
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="harimau" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Harimau</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause9">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="buaya" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Buaya</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause10">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="serigala" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Serigala</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause11">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+                                  <div class="card h-100">
+                                    <img src="./images/bg.jpg" class="singa" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Singa</h5>
+                                    </div>
+                                    <div class="card-footer" id="pause12">
+                                      <small class="text-muted">Close</small>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                      </div> 
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</body>
+
+<script src="./js/hewan.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+</html>
